@@ -1,0 +1,100 @@
+/* team sec  */
+.sec-five {
+  width: 100%;
+  position: relative;
+  background: var(--white-color);
+  margin-bottom: 140px;
+}
+.sec-five .team-wrapp {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  /* min-height: 500px; */
+}
+.sec-five .team-wrapp .team-member {
+  width: 100%;
+  border-radius: 45px;
+  border: 1px solid var(--black-color);
+  box-shadow: var(--box-shadow);
+  padding: 40px 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 28px;
+  color: var(--black-color);
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.sec-five .team-wrapp .team-member:hover {
+  transform: skew(4deg) rotate(3deg);
+}
+.team-member .top {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5px;
+}
+.team-member .top .member-part {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.team-member .top .member-part .image {
+  width: 105px;
+  height: 102px;
+  overflow: hidden;
+}
+.team-member .top .member-part .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.team-member .top .member-part .info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.team-member .top .member-part .info .p2 {
+  font-weight: 300;
+}
+
+.team-member .top .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  width: 34px;
+  height: 34px;
+  background: var(--black-color);
+  cursor: pointer;
+}
+
+.team-member .dvider {
+  width: 100%;
+  height: 1px;
+  background: var(--black-color);
+}
+
+.sec-five .shadow-btn {
+  margin-top: 40px;
+  margin-left: auto;
+  width: 270px;
+}
+
+@media only screen and (max-width: 600px) {
+  .sec-five {
+    margin-bottom: 80px;
+  }
+  .sec-five .team-wrapp {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .sec-five .shadow-btn {
+    margin-top: 20px;
+    width: 100%;
+  }
+}

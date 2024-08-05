@@ -1,0 +1,72 @@
+/* case studies sec  */
+.sec-three {
+  width: 100%;
+  position: relative;
+  background: var(--white-color);
+  margin-bottom: 140px;
+}
+.sec-three .case-wrapp {
+  width: 100%;
+  background: var(--black-color);
+  border-radius: 45px;
+  padding: 60px;
+  min-height: 200px;
+  height: 330px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 64px;
+}
+.sec-three .case-wrapp .case-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 180px;
+  justify-content: space-between;
+  gap: 20px;
+  color: var(--white-color);
+}
+.sec-three .case-wrapp .case-item .btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 1rem;
+}
+.case-item .btn:hover .learn-more-green-btn,
+.case-item .btn:hover .icon {
+  color: var(--hover-btn);
+}
+
+.case-item .btn .icon {
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.case-item .btn:hover .icon {
+  transform: rotate(30deg);
+}
+.sec-three .case-wrapp .case-item.border {
+  border-left: 1px solid var(--white-color);
+  padding-left: 64px;
+}
+
+@media only screen and (max-width: 600px) {
+  .sec-three .case-wrapp {
+    height: fit-content;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 34px;
+  }
+
+  .sec-three .case-wrapp .case-item {
+    height: fit-content;
+    gap: 30px;
+  }
+  .sec-three .case-wrapp .case-item.border {
+    border-left: none;
+    border-top: 1px solid var(--white-color);
+    padding-left: 0px;
+    padding-top: 20px;
+  }
+}

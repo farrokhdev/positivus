@@ -1,0 +1,155 @@
+/* testimonials sec  */
+.sec-seven {
+  width: 100%;
+  position: relative;
+  background: var(--white-color);
+  margin-bottom: 140px;
+}
+.sec-seven .contact-wrapp {
+  width: 100%;
+  height: 775px;
+  background: var(--gray-color);
+  border-radius: 45px;
+  overflow: hidden;
+  padding: 80px 0px 60px 0px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sec-seven .contact-wrapp .form-part {
+  flex-basis: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-left: 100px;
+}
+.form-part form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+form .radioBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 35px;
+  font-size: 18px;
+}
+form .radioBox .inner {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+}
+form .inputBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 16px;
+}
+.form-part form input.radio[type="radio"] {
+  display: none;
+}
+
+/* Style the custom radio button */
+form input[type="radio"] {
+  display: none;
+}
+
+form input[type="radio"] + label {
+  position: relative;
+  cursor: pointer;
+  padding-left: 35px;
+}
+
+form input[type="radio"] + label::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  width: 25px;
+  height: 25px;
+  border: 1px solid var(--black-color);
+  border-radius: 50%;
+  background: white;
+  padding: 2px;
+}
+
+form input[type="radio"]:checked + label::before {
+  background: var(--green-color);
+}
+
+/* Style the custom radio button */
+
+.form-part form .inputBox input.text {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  border-radius: 14px;
+  border: 1px solid var(--black-color);
+  background: var(--white-color);
+  padding: 18px 30px;
+  color: var(--black-color);
+  font-size: 18px;
+}
+.form-part form input::placeholder {
+  /* color: var(--gray-color); */
+}
+
+.form-part form .inputBox textarea {
+  width: 100%;
+  height: 190px;
+  display: flex;
+  border-radius: 14px;
+  border: 1px solid var(--black-color);
+  background: var(--white-color);
+  padding: 18px 30px;
+  color: var(--black-color);
+  font-size: 18px;
+}
+
+.form-part form button.shadow-btn {
+  width: 100%;
+}
+
+.sec-seven .contact-wrapp .image-part {
+  flex-basis: 50%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.sec-seven .contact-wrapp .image-part img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  /* transform: translateX(-50%); */
+  top: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .sec-seven .contact-wrapp {
+    padding: 30px;
+    flex-direction: column;
+  }
+
+  .sec-seven .contact-wrapp .form-part {
+    flex-basis: 100%;
+    width: 100%;
+    height: 100%;
+    padding-left: 0px;
+  }
+
+  .sec-seven .contact-wrapp .image-part {
+    display: none;
+  }
+}

@@ -1,0 +1,57 @@
+/* hero sec  */
+.sec-one {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background: var(--white-color);
+  margin-bottom: 140px;
+}
+.sec-one .hero-wrapp {
+  width: 100%;
+  height: fit-content;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 70px;
+}
+.sec-one .hero-wrapp .content-part {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.sec-one .hero-wrapp .content-part h1 {
+  font-weight: 400;
+}
+.sec-one .hero-wrapp .image-part {
+  flex-basis: 50%;
+}
+.sec-one .hero-wrapp .image-part img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.sec-one .brands-part {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sec-one .brands-part img {
+  filter: grayscale(100%);
+}
+
+@media only screen and (max-width: 600px) {
+  .sec-one {
+    margin-bottom: 80px;
+  }
+  .sec-one .hero-wrapp {
+    flex-direction: column-reverse;
+  }
+
+  .sec-one .brands-part {
+    flex-direction: column;
+  }
+}

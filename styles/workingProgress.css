@@ -1,0 +1,94 @@
+/* working progress sec  */
+.sec-four {
+  width: 100%;
+  position: relative;
+  background: var(--white-color);
+  margin-bottom: 140px;
+}
+.sec-four .working-wrapp {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  min-height: 500px;
+}
+.sec-four .working-wrapp .working-faq {
+  width: 100%;
+  padding: 40px 60px;
+  height: 160px;
+  border-radius: 45px;
+  box-shadow: var(--box-shadow);
+  border: 1px solid var(--black-color);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background: var(--gray-color);
+  transition: 0.5s ease;
+  overflow: hidden;
+}
+.sec-four .working-wrapp .working-faq .top-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.sec-four .working-wrapp .working-faq .top-box .title-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.sec-four .working-wrapp .working-faq .top-box .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  border: 1px solid var(--black-color);
+  background: var(--gray-bg-color);
+  cursor: pointer;
+}
+
+.sec-four .working-wrapp .working-faq.active {
+  background: var(--green-color);
+  height: 300px;
+}
+
+.sec-four .working-wrapp .working-faq .bottom-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  transition: 0.5s ease;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.sec-four .working-wrapp .working-faq .bottom-box.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+.working-faq .bottom-box .dvider {
+  width: 100%;
+  height: 1px;
+  background: var(--black-color);
+}
+
+@media only screen and (max-width: 600px) {
+  .sec-four .working-wrapp .working-faq {
+    width: 100%;
+    padding: 20px 20px;
+    height: 130px;
+  }
+  .sec-four .working-wrapp .working-faq .top-box .icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+  .sec-four .working-wrapp .working-faq.active {
+    background: var(--green-color);
+    height: 250px;
+  }
+}
